@@ -4,7 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
-
 module.exports = {
     entry: {
         polyfills: './src/js/polyfills.js',
@@ -31,7 +30,7 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|svg|jpe?g|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -67,6 +66,5 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new VueLoaderPlugin(),
-
     ],
 };

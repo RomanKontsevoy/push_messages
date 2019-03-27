@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import '../img/favicon.png';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router'
